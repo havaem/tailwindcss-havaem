@@ -7,7 +7,7 @@ A plugin that provides a set of utilities for the [Havaem](https://havaem.com) d
 Install the plugin from npm:
 
 ```sh
-npm install -D @tailwindcss-havaem
+npm i -D @havaem/tailwindcss-havaem
 ```
 
 Then add the plugin to your `tailwind.config.js` file
