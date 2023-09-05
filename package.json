@@ -5,6 +5,9 @@
     "types": "src/index.d.ts",
     "license": "MIT",
     "repository": "https://github.com/havaem/tailwindcss-havaem",
+    "keywords": [
+        "havaem"
+    ],
     "scripts": {
         "build": "tsc"
     },
