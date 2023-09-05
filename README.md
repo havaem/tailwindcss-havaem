@@ -18,9 +18,6 @@ module.exports = {
     theme: {
         // ...
     },
-    corePlugins: {
-        aspectRatio: false,
-    },
     plugins: [
         require('@tailwindcss/tailwindcss-havaem'),
         // ...
