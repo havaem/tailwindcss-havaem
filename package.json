@@ -1,0 +1,27 @@
+{
+    "name": "@south/tailwindcss-havaem",
+    "version": "0.4.2",
+    "main": "src/index.js",
+    "types": "src/index.d.ts",
+    "license": "MIT",
+    "repository": "https://github.com/havaem/tailwindcss-havaem",
+    "publishConfig": {
+        "access": "public"
+    },
+    "prettier": {
+        "printWidth": 120,
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "endOfLine": "auto",
+        "tabWidth": 4
+    },
+    "peerDependencies": {
+        "tailwindcss": ">=2.0.0 || >=3.3.3 || >=3.3.3-alpha.1"
+    },
+    "devDependencies": {
+        "postcss": "^8.4.29",
+        "tailwindcss": "^3.3.3",
+        "tailwindcss-v3": "npm:tailwindcss@^3.3.3"
+    }
+}
