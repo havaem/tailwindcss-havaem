@@ -19,7 +19,7 @@ module.exports = {
         // ...
     },
     plugins: [
-        require('@tailwindcss/tailwindcss-havaem'),
+        require('@havaem/tailwindcss-havaem'),
         // ...
     ],
 }
