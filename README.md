@@ -1,6 +1,6 @@
 # @tailwindcss-havaem
 
-A plugin that provides a composable API for giving elements a fixed aspect ratio.
+A plugin that provides a set of utilities for the [Havaem](https://havaem.com) design system.
 
 ## Installation
 
