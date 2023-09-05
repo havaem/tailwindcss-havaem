@@ -1,5 +1,5 @@
 {
-    "name": "@south/tailwindcss-havaem",
+    "name": "@havaem/tailwindcss-havaem",
     "version": "0.0.1",
     "main": "dist/index.js",
     "types": "src/index.d.ts",
