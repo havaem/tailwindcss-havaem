@@ -24,3 +24,17 @@ module.exports = {
     ],
 }
 ```
+
+## Usage
+
+```html
+<div class="flex-center"></div>
+<div class="flex-center-x"></div>
+<div class="flex-center-y"></div>
+<div class="inline-flex-center"></div>
+<div class="inline-flex-center-x"></div>
+<div class="inline-flex-center-y"></div>
+<div class="absolute-center"></div>
+<div class="absolute-center-x"></div>
+<div class="absolute-center-y"></div>
+```
