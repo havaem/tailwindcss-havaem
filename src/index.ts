@@ -1,19 +1,16 @@
 import plugin from 'tailwindcss/plugin'
 
-const havaem = plugin(function ({ addUtilities }) {
+const havaem = plugin(function ({ addUtilities, addVariant }) {
+    addVariant('hocus', ['&:hover', '&:focus'])
+    addVariant('inverted-colors', '@media (inverted-colors: inverted)')
+    addVariant('not-first', '&:not(:first-child)')
+    addVariant('not-last', '&:not(:last-child)')
+    addVariant('fullscreen', '&:fullscreen')
     addUtilities({
         '.flex-center': {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-        },
-        '.flex-column': {
-            display: 'flex',
-            flexDirection: 'column',
-        },
-        '.flex-row': {
-            display: 'flex',
-            flexDirection: 'row',
         },
         '.flex-center-x': {
             display: 'flex',
@@ -21,6 +18,19 @@ const havaem = plugin(function ({ addUtilities }) {
         },
         '.flex-center-y': {
             display: 'flex',
+            alignItems: 'center',
+        },
+        '.inline-flex-center': {
+            display: 'inline-flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
+        '.inline-flex-center-x': {
+            display: 'inline-flex',
+            justifyContent: 'center',
+        },
+        '.inline-flex-center-y': {
+            display: 'inline-flex',
             alignItems: 'center',
         },
         '.absolute-center': {

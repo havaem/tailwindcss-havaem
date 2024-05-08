@@ -1,12 +1,19 @@
 {
     "name": "@havaem/tailwindcss-havaem",
+    "description": "Havaem's TailwindCSS plugin, providing additional utilities and components.",
     "version": "0.0.1",
-    "main": "dist/index.js",
+    "main": "dist/index.ts",
     "types": "src/index.d.ts",
     "license": "MIT",
     "repository": "https://github.com/havaem/tailwindcss-havaem",
     "keywords": [
-        "havaem"
+        "havaem",
+        "tailwindcss-havaem",
+        "tailwindcss",
+        "tailwind",
+        "css",
+        "postcss",
+        "plugin"
     ],
     "scripts": {
         "build": "tsc"
@@ -23,13 +30,13 @@
         "tabWidth": 4
     },
     "peerDependencies": {
-        "tailwindcss": ">=2.0.0 || >=3.3.3 || >=3.3.3-alpha.1"
+        "tailwindcss": ">=3.0.0 || insiders"
     },
     "devDependencies": {
         "@types/node": "^20.5.9",
         "postcss": "^8.4.29",
-        "tailwindcss": "^3.3.3",
-        "tailwindcss-v3": "npm:tailwindcss@^3.3.3",
+        "tailwindcss": "^3.4.3",
+        "tailwindcss-v3": "npm:tailwindcss@^3.4.3",
         "typescript": "^5.2.2"
     }
 }
