@@ -30,7 +30,7 @@
         "tabWidth": 4
     },
     "peerDependencies": {
-        "tailwindcss": ">=3.0.0 || insiders"
+        "tailwindcss": ">=3.0.0 || insiders || >=4.0.0"
     },
     "devDependencies": {
         "@types/node": "^20.5.9",
