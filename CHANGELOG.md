@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Nothing yet!
 
+## [0.1.0] - 2026-11-26
+
+-   **Breaking:** require Tailwind CSS v4.1+ (load with `@plugin`); Tailwind v3 users stay on 0.0.8
+-   **Breaking:** remove `not-first`, `not-last` and `inverted-colors` variants (built into Tailwind CSS v4.1+)
+-   Publish only `src/`, fix plugin options type
+
 ## [0.0.3] - 2024-05-08
 
 -   Clean code

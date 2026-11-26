@@ -17,30 +17,16 @@ Then add the plugin to your main `style.css` file:
 + @plugin "@havaem/tailwindcss-havaem";
 ```
 
-If you are still using **Tailwind CSS v3**, add the plugin to your `tailwind.config.js` file:
-
-```js
-// tailwind.config.js
-module.exports = {
-    theme: {
-        // ...
-    },
-    plugins: [
-        require('@havaem/tailwindcss-havaem'),
-        // ...
-    ],
-}
-```
+> Requires Tailwind CSS v4.1+. Still on **Tailwind CSS v3**? Use `@havaem/tailwindcss-havaem@0.0.8`.
 
 ## Features
 
 -   **Variants**:
 
     -   `hocus`: Applies styles on hover or focus (`:hover`, `:focus`)
-    -   `inverted-colors`: Targets media with inverted colors
-    -   `not-first`: Targets elements that are not the first child
-    -   `not-last`: Targets elements that are not the last child
     -   `fullscreen`: Targets elements in fullscreen mode
+
+    `not-first`, `not-last` and `inverted-colors` were removed in 0.1.0 because Tailwind CSS v4.1+ ships them built in.
 
 -   **Utilities**:
     -   `.flex-center`, `.flex-center-x`, `.flex-center-y`
