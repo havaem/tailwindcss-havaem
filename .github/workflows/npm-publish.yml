@@ -22,3 +22,6 @@ jobs:
       - run: npm install -g npm@latest
       # plain JS, no build or install needed
       - run: npm publish
+        env:
+          # fallback: npm tries OIDC first, uses this token only if OIDC fails
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
