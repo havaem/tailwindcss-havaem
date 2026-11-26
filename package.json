@@ -8,7 +8,10 @@
         "src"
     ],
     "license": "MIT",
-    "repository": "https://github.com/havaem/tailwindcss-havaem",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/havaem/tailwindcss-havaem.git"
+    },
     "keywords": [
         "havaem",
         "tailwindcss-havaem",
