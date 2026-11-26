@@ -5,6 +5,10 @@ module.exports = plugin.withOptions(
         return function ({ addVariant, addUtilities }) {
             addVariant('hocus', ['&:hover', '&:focus']);
             addVariant('fullscreen', '&:fullscreen');
+            // built into Tailwind v4.1+ (same output); kept so Tailwind v3 still has them
+            addVariant('not-first', '&:not(:first-child)');
+            addVariant('not-last', '&:not(:last-child)');
+            addVariant('inverted-colors', '@media (inverted-colors: inverted)');
             addUtilities({
                 '.flex-center': {
                     display: 'flex',
