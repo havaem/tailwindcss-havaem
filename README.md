@@ -34,6 +34,7 @@ module.exports = {
 -   **Variants**:
 
     -   `hocus`: Applies styles on hover or focus (`:hover`, `:focus`)
+    -   `hocus-visible`: Applies styles on hover or keyboard focus (`:hover`, `:focus-visible`)
     -   `fullscreen`: Targets elements in fullscreen mode
     -   `not-first`: Targets elements that are not the first child
     -   `not-last`: Targets elements that are not the last child
@@ -67,13 +68,13 @@ module.exports = {
     Same as `.flex-center-y` but uses `display: inline-flex;`.
 
 -   **`.absolute-center`**  
-    Absolutely positions the element at the center of its parent (`position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);`).
+    Absolutely positions the element at the center of its parent (`position: absolute; top: 50%; left: 50%; translate: -50% -50%;`).
 
 -   **`.absolute-center-x`**  
-    Absolutely positions the element at the horizontal center (`position: absolute; left: 50%; transform: translateX(-50%);`).
+    Absolutely positions the element at the horizontal center (`position: absolute; left: 50%; translate: -50% 0;`).
 
 -   **`.absolute-center-y`**  
-    Absolutely positions the element at the vertical center (`position: absolute; top: 50%; transform: translateY(-50%);`).
+    Absolutely positions the element at the vertical center (`position: absolute; top: 50%; translate: 0 -50%;`).
 
 ```html
 <div class="flex-center"></div>

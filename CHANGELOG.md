@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Nothing yet!
 
+## [0.2.0] - 2026-11-26
+
+-   Add `hocus-visible` variant (`:hover`, `:focus-visible`)
+-   `absolute-center*` use the `translate` property instead of `transform`, so `rotate-*`/`scale-*` no longer break the centering
+
 ## [0.1.1] - 2026-11-26
 
 -   Support Tailwind CSS v3 again (peer `tailwindcss >=3.0.0`)
