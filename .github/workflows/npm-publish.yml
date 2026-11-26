@@ -1,8 +1,8 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    tags: ['v*']
 
 jobs:
   publish-npm:
@@ -13,6 +13,8 @@ jobs:
         with:
           node-version: 20
           registry-url: https://registry.npmjs.org/
+      - name: Check tag matches package.json version
+        run: test "v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
       # plain JS, no build or install needed
       - run: npm publish
         env:
