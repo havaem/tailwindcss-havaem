@@ -7,6 +7,9 @@ on:
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # npm Trusted Publishing (OIDC), no token secret
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -15,7 +18,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Check tag matches package.json version
         run: test "v$(node -p "require('./package.json').version")" = "$GITHUB_REF_NAME"
+      # Trusted Publishing needs npm >= 11.5.1
+      - run: npm install -g npm@latest
       # plain JS, no build or install needed
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
